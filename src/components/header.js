@@ -3,7 +3,10 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
-const Navbarstyled = styled.div``
+const Navbarstyled = styled.div`
+  padding-top: 1rem;
+  margin-bottom: 6rem;
+`
 
 export default class Header extends React.Component {
   constructor(props) {

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const CardStyled = styled.div`
-  padding: 1rem 2rem 1rem 2rem;
+  margin: 1rem;
 `
 
 const Card = props => (
@@ -23,7 +23,9 @@ const Card = props => (
             <i class="fas fa-star"></i>
           </span>
           <h5 class="subtitle is-5">{props.Subtitle}</h5>
-          <a class="button is-primary">Enroll this Course</a>
+          <a href="#" class="button is-primary">
+            Enroll this Course
+          </a>
         </div>
       </div>
     </div>

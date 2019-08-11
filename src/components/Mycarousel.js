@@ -14,15 +14,17 @@ const MyCacrousel = styled.div`
 
   .first {
     height: 30rem;
-    background-color: red;
-    background-image: url("https://images.theconversation.com/files/231302/original/file-20180809-30458-ok9iv.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .own {
     padding-top: 15rem;
     font-size: 4rem;
+  }
+  img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0.4;
   }
 `
 
@@ -32,7 +34,7 @@ export default class DemoCarousel extends Component {
       <MyCacrousel className="is-hidden-mobile">
         <Carousel
           showStatus={false}
-          autoPlay={true}
+          autoPlay={false}
           infiniteLoop={true}
           stopOnHover={false}
           interval={3000}
@@ -41,11 +43,21 @@ export default class DemoCarousel extends Component {
           transitionTime={400}
         >
           <div className="first">
+            <img
+              src="https://colorlib.com/preview/theme/academics/images/hero_1.jpg"
+              width="100%"
+              height="auto"
+            />
             <h1 className=" has-text-weight-bold has-text-white-bis is-family-sans-serif own">
               Acadmics University
             </h1>
           </div>
           <div className="first">
+            <img
+              src="https://colorlib.com/preview/theme/academics/images/hero_1.jpg"
+              width="100%"
+              height="auto"
+            />
             <h1 className=" has-text-weight-bold has-text-white-bis is-family-sans-serif own">
               You can Learn Anything
             </h1>

@@ -4,10 +4,26 @@ import Card from "./Cards"
 
 import styled from "styled-components"
 
-const Test = styled.div`
-  margin-top: 2rem;
+const Conainer = styled.div`
   padding-left: 5rem;
   padding-right: 5rem;
+  .first-conatiner {
+    padding: 0rem 27rem;
+  }
+
+  .my-heading {
+    border-bottom: 5px solid #51be78;
+    padding: 0.25rem 0rem;
+    margin-top: 10rem;
+  }
+  .my-subheading {
+    margin-top: 1rem;
+    margin-bottom: 8rem;
+  }
+
+  .test {
+    padding: 5rem;
+  }
 `
 
 function SampleNextArrow(props) {
@@ -18,8 +34,7 @@ function SampleNextArrow(props) {
       style={{
         ...style,
         display: "block",
-        background: "grey",
-        borderRadius: "10px",
+        background: "black",
       }}
       onClick={onClick}
     />
@@ -34,8 +49,7 @@ function SamplePrevArrow(props) {
       style={{
         ...style,
         display: "block",
-        background: "grey",
-        borderRadius: "10px",
+        background: "black",
       }}
       onClick={onClick}
     />
@@ -49,7 +63,7 @@ export default class Responsive extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 3,
-      slidesToScroll: 1,
+      slidesToScroll: 3,
       autoplay: true,
       speed: 250,
       autoplaySpeed: 6000,
@@ -87,7 +101,18 @@ export default class Responsive extends Component {
       ],
     }
     return (
-      <Test>
+      <Conainer>
+        <div className="has-text-centered">
+          <div className="has-text-centered first-conatiner">
+            <h1 className="title is-2 has-text-weight-semibold my-heading">
+              Popular Courses
+            </h1>
+          </div>
+          <h5 class="subtitle is-5 my-subheading">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia,
+            id?
+          </h5>
+        </div>
         <Slider {...settings}>
           <div>
             <Card
@@ -118,7 +143,7 @@ export default class Responsive extends Component {
             />
           </div>
         </Slider>
-      </Test>
+      </Conainer>
     )
   }
 }

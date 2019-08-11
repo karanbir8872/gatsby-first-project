@@ -34,7 +34,7 @@ export default class DemoCarousel extends Component {
       <MyCacrousel className="is-hidden-mobile">
         <Carousel
           showStatus={false}
-          autoPlay={false}
+          autoPlay={true}
           infiniteLoop={true}
           stopOnHover={false}
           interval={3000}

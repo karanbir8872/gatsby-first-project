@@ -8,13 +8,12 @@ const Conainer = styled.div`
   padding-left: 5rem;
   padding-right: 5rem;
   .first-conatiner {
-    padding: 0rem 27rem;
+    margin-top: 10rem;
   }
 
   .my-heading {
     border-bottom: 5px solid #51be78;
     padding: 0.25rem 0rem;
-    margin-top: 10rem;
   }
   .my-subheading {
     margin-top: 1rem;
@@ -103,9 +102,9 @@ export default class Responsive extends Component {
     return (
       <Conainer>
         <div className="has-text-centered">
-          <div className="has-text-centered first-conatiner">
-            <h1 className="title is-2 has-text-weight-semibold my-heading">
-              Popular Courses
+          <div className=" first-conatiner">
+            <h1 className="has-text-centered title is-2 has-text-weight-semibold ">
+              <span className="my-heading">Popular Courses</span>
             </h1>
           </div>
           <h5 class="subtitle is-5 my-subheading">

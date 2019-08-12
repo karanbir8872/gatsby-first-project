@@ -68,11 +68,10 @@ const Work = () => (
   <StyledWork>
     <div className="container ">
       <div>
-        <div className="has-text-centered first-conatiner">
-          <h1 className="title is-2 has-text-weight-semibold my-heading">
-            Why Academics Works
-          </h1>
-        </div>
+        <h1 className="title has-text-centered is-2 has-text-weight-semibold ">
+          <span className="my-heading">Why Academics Works</span>
+        </h1>
+
         <div className="columns has-text-centered ColumnEdit">
           <div className="column">
             <span className="icon hexagon">

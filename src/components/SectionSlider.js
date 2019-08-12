@@ -7,9 +7,8 @@ const Container = styled.div`
   margin-bottom: 2rem;
   margin-top: 4rem;
 
-  .test {
+  .my-heading {
     border-bottom: 5px solid #1d9e4e;
-    margin-right: 60rem;
   }
 `
 
@@ -30,8 +29,10 @@ export default class SimpleSlider extends Component {
     return (
       <Container>
         <div class="container">
-          <div className="test">
-            <h2 class="title is-3">Testimonials</h2>
+          <div>
+            <h2 class="title  is-2 has-text-weight-semibold">
+              <span className="my-heading">Testimonials</span>
+            </h2>
           </div>
           <Slider {...settings}>
             <div>

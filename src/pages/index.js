@@ -6,6 +6,7 @@ import Work from "../components/Works"
 import SimpleSlider from "../components/Slider"
 import HeroInfo from "../components/Hero"
 import SectionSlider from "../components/SectionSlider"
+import Subscribe from "../components/Subscribe"
 
 const IndexPage = () => (
   <div>
@@ -15,6 +16,7 @@ const IndexPage = () => (
       <SimpleSlider />
       <HeroInfo />
       <SectionSlider />
+      <Subscribe />
     </Layout>
   </div>
 )

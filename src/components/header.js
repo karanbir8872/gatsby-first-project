@@ -4,8 +4,11 @@ import React from "react"
 import styled from "styled-components"
 
 const Navbarstyled = styled.div`
-  padding-top: 1rem;
   margin-bottom: 6rem;
+
+  .myedit {
+    padding-top: 1rem;
+  }
 `
 
 export default class Header extends React.Component {
@@ -32,7 +35,7 @@ export default class Header extends React.Component {
           role="navigation"
           aria-label="main navigation"
         >
-          <div class="container">
+          <div class="container myedit">
             <div className="navbar-brand">
               <a className="navbar-item" href="https://bulma.io">
                 <img

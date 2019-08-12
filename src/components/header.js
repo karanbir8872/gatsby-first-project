@@ -4,7 +4,7 @@ import React from "react"
 import styled from "styled-components"
 
 const Navbarstyled = styled.div`
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 
   .myedit {
     padding-top: 1rem;
@@ -30,11 +30,7 @@ export default class Header extends React.Component {
     const { View } = this.state
     return (
       <Navbarstyled>
-        <nav
-          className="navbar is-fixed-top "
-          role="navigation"
-          aria-label="main navigation"
-        >
+        <nav className="navbar" role="navigation" aria-label="main navigation">
           <div class="container myedit">
             <div className="navbar-brand">
               <a className="navbar-item" href="https://bulma.io">

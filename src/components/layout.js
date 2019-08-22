@@ -7,6 +7,7 @@ import Footer from "./Footer"
 const Layout = ({ children }) => (
   <div>
     <Helmet>
+      <title>Home-Academics</title>
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"

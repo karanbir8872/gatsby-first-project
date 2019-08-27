@@ -5,6 +5,7 @@ import { Carousel } from "react-responsive-carousel"
 import styled from "styled-components"
 
 const MyCacrousel = styled.div`
+  background-color: white;
   margin-bottom: 5rem;
 
   .carousel.carousel-slider {
@@ -47,7 +48,7 @@ export default class DemoCarousel extends Component {
       <MyCacrousel className="">
         <Carousel
           showStatus={false}
-          autoPlay={false}
+          autoPlay={true}
           infiniteLoop={true}
           stopOnHover={false}
           interval={3000}

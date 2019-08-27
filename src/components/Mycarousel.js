@@ -19,21 +19,35 @@ const MyCacrousel = styled.div`
     padding-top: 15rem;
     font-size: 4rem;
   }
+
   img {
     position: absolute;
     left: 0px;
     top: 0px;
     opacity: 0.4;
   }
+
+
+  @media only screen and (max-width: 600px) {
+    .carousel.carousel-slider {
+      height: 18rem;
+    }
+    .own {
+      padding-top: 1rem;
+      font-size: 3rem;
+    }
+
+
+
 `
 
 export default class DemoCarousel extends Component {
   render() {
     return (
-      <MyCacrousel className="is-hidden-mobile">
+      <MyCacrousel className="">
         <Carousel
           showStatus={false}
-          autoPlay={true}
+          autoPlay={false}
           infiniteLoop={true}
           stopOnHover={false}
           interval={3000}

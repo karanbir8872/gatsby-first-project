@@ -59,11 +59,6 @@ const StyledWork = styled.div`
     width: 0;
     border-top: 27.71px solid #51be78;
   }
-
-  .columns {
-    margin-right: 0rem;
-    margin-left: 0rem;
-  }
 `
 
 const Work = () => (

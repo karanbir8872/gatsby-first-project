@@ -12,7 +12,7 @@ const Layout = ({ children }) => (
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
       />
-      <link rel="stylesheet" href="./layout.css" />
+      <link rel="stylesheet" type="text/css" href="layout.css" />
       <link
         rel="stylesheet"
         href="<NODE_MODULES_FOLDER>/react-responsive-carousel/lib/styles/carousel.min.css"

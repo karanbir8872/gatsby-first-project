@@ -31,11 +31,6 @@ const Container = styled.div`
   .my-footer {
     background: #183661;
   }
-
-  .columns {
-    margin-right: 0rem;
-    margin-left: 0rem;
-  }
 `
 
 const Footer = () => (

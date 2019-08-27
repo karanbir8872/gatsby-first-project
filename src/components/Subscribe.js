@@ -26,11 +26,6 @@ const Container = styled.div`
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
-
-  .columns {
-    margin-right: 0rem;
-    margin-left: 0rem;
-  }
 `
 
 const Subscribe = () => (

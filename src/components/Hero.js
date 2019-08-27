@@ -11,11 +11,6 @@ const Container = styled.div`
   .Heading {
     border-bottom: 5px solid #51be78;
   }
-
-  .columns {
-    margin-right: 0rem;
-    margin-left: 0rem;
-  }
 `
 
 const HeroInfo = () => (

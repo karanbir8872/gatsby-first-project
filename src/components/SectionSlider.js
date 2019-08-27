@@ -11,11 +11,6 @@ const Container = styled.div`
   .my-heading {
     border-bottom: 5px solid #1d9e4e;
   }
-
-  .columns {
-    margin-right: 0rem;
-    margin-left: 0rem;
-  }
 `
 
 export default class SimpleSlider extends Component {

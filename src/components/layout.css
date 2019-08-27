@@ -4,5 +4,6 @@ body {
 }
 
 .columns {
-  margin-right: 0rem;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
 }

@@ -12,6 +12,10 @@ const Layout = ({ children }) => (
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
       />
+      <meta
+        name="google-site-verification"
+        content="0PGHqAXsAfj0opMsbLk6RGQei2-YjnORCRNPTY3vpBs"
+      />
       <link rel="stylesheet" type="text/css" href="layout.css" />
       <link
         rel="stylesheet"

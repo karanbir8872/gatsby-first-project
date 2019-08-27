@@ -7,8 +7,9 @@ import styled from "styled-components"
 const Conainer = styled.div`
   padding-left: 5rem;
   padding-right: 5rem;
+
   .first-conatiner {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
 
   .my-heading {
@@ -18,6 +19,15 @@ const Conainer = styled.div`
   .my-subheading {
     margin-top: 1rem;
     margin-bottom: 8rem;
+  }
+  @media only screen and (max-width: 600px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .my-subheading {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 `
 
@@ -96,7 +106,7 @@ export default class Responsive extends Component {
       ],
     }
     return (
-      <Conainer className="is-hidden-mobile">
+      <Conainer className="">
         <div className="has-text-centered">
           <div className=" first-conatiner">
             <h1 className="has-text-centered title is-2 has-text-weight-semibold ">

@@ -6,9 +6,14 @@ import Card from "./InforamtionCard"
 const Container = styled.div`
   margin-bottom: 2rem;
   margin-top: 4rem;
+  margin-right: 0rem;
 
   .my-heading {
     border-bottom: 5px solid #1d9e4e;
+  }
+
+  .columns {
+    margin-right: 0rem;
   }
 `
 
@@ -27,40 +32,40 @@ export default class SimpleSlider extends Component {
       initialSlide: 0,
     }
     return (
-      <Container>
-        <div class="container">
+      <Container className="is-hidden-mobile">
+        <div className="container">
           <div>
-            <h2 class="title  is-2 has-text-weight-semibold">
+            <h2 className="title  is-2 has-text-weight-semibold">
               <span className="my-heading">Testimonials</span>
             </h2>
           </div>
           <Slider {...settings}>
             <div>
-              <div class="columns">
-                <div class="column">
+              <div className="columns">
+                <div className="column">
                   <Card />
                 </div>
-                <div class="column">
-                  <Card />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="columns">
-                <div class="column">
-                  <Card />
-                </div>
-                <div class="column">
+                <div className="column">
                   <Card />
                 </div>
               </div>
             </div>
             <div>
-              <div class="columns">
-                <div class="column">
+              <div className="columns">
+                <div className="column">
                   <Card />
                 </div>
-                <div class="column">
+                <div className="column">
+                  <Card />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="columns">
+                <div className="column">
+                  <Card />
+                </div>
+                <div className="column">
                   <Card />
                 </div>
               </div>

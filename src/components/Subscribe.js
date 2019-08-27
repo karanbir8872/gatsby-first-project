@@ -26,28 +26,33 @@ const Container = styled.div`
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
+
+  .columns {
+    margin-right: 0rem;
+  }
 `
 
 const Subscribe = () => (
   <Container>
-    <div class="container">
-      <div class="columns my-columns">
-        <div class="column">
-          <p class="title is-3 has-text-white">Subscribe to us!</p>
-          <p class="subtitle is-5 has-text-white">
+    <div className="container">
+      {" "}
+      <div className="columns my-columns">
+        <div className="column">
+          <p className="title is-3 has-text-white">Subscribe to us!</p>
+          <p className="subtitle is-5 has-text-white">
             Far far away, behind the word mountains, far from the countries
             Vokalia and Consonantia,
           </p>
         </div>
-        <div class="column">
-          <div class="field">
-            <div class="control">
+        <div className="column">
+          <div className="field">
+            <div className="control">
               <input
-                class="input is-medium user-input"
+                className="input is-medium user-input"
                 type="text"
-                placeholder="Normal input"
+                placeholder="Enter your Email"
               />
-              <button class="button is-primary Send-button">Send</button>
+              <button className="button is-primary Send-button">Send</button>
             </div>
           </div>
         </div>

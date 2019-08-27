@@ -31,13 +31,17 @@ const Container = styled.div`
   .my-footer {
     background: #183661;
   }
+
+  .columns {
+    margin-right: 0rem;
+  }
 `
 
 const Footer = () => (
   <Container>
-    <div class="container ">
-      <div class="columns ">
-        <div class="column">
+    <div className="container ">
+      <div className="columns ">
+        <div className="column">
           <img src="https://colorlib.com/preview/theme/academics/images/logo.png " />
           <p className="has-text-white text" href="#">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo
@@ -45,7 +49,7 @@ const Footer = () => (
           </p>
           <a className="has-text-primary link">Learn More</a>
         </div>
-        <div class="column">
+        <div className="column">
           <h2 className="has-text-weight-semibold has-text-white-ter title is-6 heading">
             <span className="underline">Our Campus</span>
           </h2>
@@ -56,7 +60,7 @@ const Footer = () => (
           <a className="has-text-primary link">careers</a>
           <a className="has-text-primary link">Human Resources</a>
         </div>
-        <div class="column">
+        <div className="column">
           <h2 className="has-text-weight-semibold has-text-white-ter title is-6 heading">
             <span className="underline">Our Courses</span>
           </h2>
@@ -67,7 +71,7 @@ const Footer = () => (
           <a className="has-text-primary link">Business Administration</a>
           <a className="has-text-primary link">Computer Science</a>
         </div>
-        <div class="column">
+        <div className="column">
           <h2 className="has-text-weight-semibold has-text-white-ter title is-6 heading">
             <span className="underline">Contact</span>
           </h2>
@@ -79,8 +83,8 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <footer class="footer my-footer has-text-white-ter">
-      <div class="content has-text-centered">
+    <footer className="footer my-footer has-text-white-ter">
+      <div className="content has-text-centered">
         <p>
           <strong className="has-text-white-ter">Bulma</strong> by{" "}
           <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is

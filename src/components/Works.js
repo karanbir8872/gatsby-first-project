@@ -4,10 +4,6 @@ import styled from "styled-components"
 const StyledWork = styled.div`
   font-family: "Roboto", sans-serif;
 
-  .first-conatiner {
-    padding: 0rem 22rem;
-  }
-
   .my-heading {
     border-bottom: 5px solid #51be78;
     padding: 0.25rem 0rem;
@@ -61,6 +57,10 @@ const StyledWork = styled.div`
     top: 100%;
     width: 0;
     border-top: 27.71px solid #51be78;
+  }
+
+  .columns {
+    margin-right: 0rem;
   }
 `
 

@@ -19,10 +19,6 @@ const Conainer = styled.div`
     margin-top: 1rem;
     margin-bottom: 8rem;
   }
-
-  .test {
-    padding: 5rem;
-  }
 `
 
 function SampleNextArrow(props) {
@@ -100,7 +96,7 @@ export default class Responsive extends Component {
       ],
     }
     return (
-      <Conainer>
+      <Conainer className="is-hidden-mobile">
         <div className="has-text-centered">
           <div className=" first-conatiner">
             <h1 className="has-text-centered title is-2 has-text-weight-semibold ">

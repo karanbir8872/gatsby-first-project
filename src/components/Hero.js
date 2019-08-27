@@ -11,10 +11,14 @@ const Container = styled.div`
   .Heading {
     border-bottom: 5px solid #51be78;
   }
+
+  .columns {
+    margin-right: 0rem;
+  }
 `
 
 const HeroInfo = () => (
-  <Container className="has-text-white">
+  <Container className="has-text-white ">
     <section class="section">
       <div className="container">
         <div className="columns">

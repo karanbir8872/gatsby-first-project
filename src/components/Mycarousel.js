@@ -4,10 +4,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from "react-responsive-carousel"
 import styled from "styled-components"
 
-import Card from "./Cards"
-
 const MyCacrousel = styled.div`
   margin-bottom: 5rem;
+
   .carousel.carousel-slider {
     height: 30rem;
   }

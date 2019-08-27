@@ -34,6 +34,7 @@ const Container = styled.div`
 
   .columns {
     margin-right: 0rem;
+    margin-left: 0rem;
   }
 `
 

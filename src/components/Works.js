@@ -8,6 +8,7 @@ const StyledWork = styled.div`
     border-bottom: 5px solid #51be78;
     padding: 0.25rem 0rem;
     margin-bottom: 5rem;
+    line-height: 4rem;
   }
 
   .ColumnEdit {
@@ -61,6 +62,7 @@ const StyledWork = styled.div`
 
   .columns {
     margin-right: 0rem;
+    margin-left: 0rem;
   }
 `
 

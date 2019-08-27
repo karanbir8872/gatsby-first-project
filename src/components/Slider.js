@@ -91,8 +91,8 @@ export default class Responsive extends Component {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-            initialSlide: 2,
-            autoplay: false,
+            initialSlide: 1,
+            autoplay: true,
           },
         },
         {
@@ -100,7 +100,7 @@ export default class Responsive extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: false,
+            autoplay: true,
           },
         },
       ],

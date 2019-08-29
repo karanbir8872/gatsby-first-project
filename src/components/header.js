@@ -9,6 +9,17 @@ const Navbarstyled = styled.div`
   .myedit {
     padding-top: 1rem;
   }
+
+  .icon {
+    color: #51be78;
+    font-size: 2rem;
+    margin-right: 0.75rem;
+    transition: color 0.5s;
+
+    :hover {
+      color: #000000;
+    }
+  }
 `
 
 export default class Header extends React.Component {
@@ -47,9 +58,9 @@ export default class Header extends React.Component {
                 aria-expanded="false"
                 onClick={() => this.Menu()}
               >
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+                <div aria-hidden="true"></div>
+                <div aria-hidden="true"></div>
+                <div aria-hidden="true"></div>
               </a>
             </div>
             <div
@@ -75,11 +86,14 @@ export default class Header extends React.Component {
               </div>
               <div className="navbar-end">
                 <div className="navbar-item">
-                  <div className="buttons">
-                    <a className="button is-primary">
-                      <strong>Sign up</strong>
-                    </a>
-                    <a className="button is-light">Log in</a>
+                  <div className="icon ">
+                    <i class="fab fa-facebook-square"></i>
+                  </div>
+                  <div className="icon">
+                    <i class="fab fa-twitter-square"></i>
+                  </div>
+                  <div className="icon">
+                    <i class="fab fa-linkedin"></i>
                   </div>
                 </div>
               </div>

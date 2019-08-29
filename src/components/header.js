@@ -44,7 +44,7 @@ export default class Header extends React.Component {
         <nav className="navbar" role="navigation" aria-label="main navigation">
           <div class="container myedit">
             <div className="navbar-brand">
-              <a className="navbar-item" href="https://bulma.io">
+              <a className="navbar-item">
                 <img
                   src="https://colorlib.com/preview/theme/academics/images/logo.jpg"
                   width="112"
@@ -58,9 +58,9 @@ export default class Header extends React.Component {
                 aria-expanded="false"
                 onClick={() => this.Menu()}
               >
-                <div aria-hidden="true"></div>
-                <div aria-hidden="true"></div>
-                <div aria-hidden="true"></div>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
               </a>
             </div>
             <div

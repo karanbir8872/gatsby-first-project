@@ -106,7 +106,7 @@ export default class Responsive extends Component {
       ],
     }
     return (
-      <Conainer className="">
+      <Conainer id="Course">
         <div className="has-text-centered">
           <div className=" first-conatiner">
             <h1 className="has-text-centered title is-2 has-text-weight-semibold ">

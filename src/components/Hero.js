@@ -14,7 +14,7 @@ const Container = styled.div`
 `
 
 const HeroInfo = () => (
-  <Container className="has-text-white ">
+  <Container className="has-text-white" id="About">
     <section class="section">
       <div className="container">
         <div className="columns">

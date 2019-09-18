@@ -44,8 +44,9 @@ const MyCacrousel = styled.div`
 
 export default class DemoCarousel extends Component {
   render() {
+    const { home } = this.props
     return (
-      <MyCacrousel className="">
+      <MyCacrousel>
         <Carousel
           showStatus={false}
           autoPlay={true}
@@ -63,7 +64,7 @@ export default class DemoCarousel extends Component {
               height="auto"
             />
             <h1 className=" has-text-weight-bold has-text-white-bis is-family-sans-serif own">
-              Acadmics University
+              {home.title}
             </h1>
           </div>
           <div className="first">

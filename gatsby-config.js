@@ -8,6 +8,13 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `ns8w2pucmjoi`,
+        accessToken: "B7z5M1KCIQJBGKolK33S1NRysSvYa0tFDpSw8Fi0TVQ",
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

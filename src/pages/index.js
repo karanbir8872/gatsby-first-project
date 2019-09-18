@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
+
 import Layout from "../components/layout"
 import DemoCarousel from "../components/Mycarousel"
 import Work from "../components/Works"
@@ -8,17 +9,41 @@ import HeroInfo from "../components/Hero"
 import Subscribe from "../components/Subscribe"
 import Card from "../components/InforamtionCard"
 
-const IndexPage = () => (
-  <div>
-    <Layout>
-      <DemoCarousel />
-      <Work />
-      <SimpleSlider />
-      <HeroInfo />
-      <Card />
-      <Subscribe />
-    </Layout>
-  </div>
-)
+export const indexQuery = graphql`
+  query indexQuery {
+    contentfulSlider {
+      title
+      sutitle
+      heroimage {
+        file {
+          url
+        }
+      }
+    }
+  }
+`
 
-export default IndexPage
+export default class IndexPage extends React.Component {
+  render() {
+    return (
+      <Layout>
+        <StaticQuery
+          query={indexQuery}
+          render={data => {
+            const { contentfulSlider: home } = data
+            return (
+              <React.Fragment>
+                <DemoCarousel home={home} s />
+                <Work />
+                <SimpleSlider />
+                <HeroInfo />
+                <Card />
+                <Subscribe />
+              </React.Fragment>
+            )
+          }}
+        />
+      </Layout>
+    )
+  }
+}

@@ -12,6 +12,7 @@ module.exports = {
       options: {
         spaceId: `ns8w2pucmjoi`,
         accessToken: "B7z5M1KCIQJBGKolK33S1NRysSvYa0tFDpSw8Fi0TVQ",
+        host: `preview.contentful.com`,
       },
     },
     {

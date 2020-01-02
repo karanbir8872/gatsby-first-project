@@ -8,7 +8,7 @@ import SimpleSlider from "../components/Slider"
 import HeroInfo from "../components/Hero"
 import Subscribe from "../components/Subscribe"
 import Card from "../components/InforamtionCard"
-import Contact from "../components/Contact"
+import ContactForm from "../components/Contact"
 
 export const indexQuery = graphql`
   query indexQuery {
@@ -36,7 +36,7 @@ export default class IndexPage extends React.Component {
               <React.Fragment>
                 <DemoCarousel home={home} s />
                 <Work />
-                <Contact/>
+                <ContactForm/>
                 <SimpleSlider />
                 <HeroInfo />
                 <Card />
